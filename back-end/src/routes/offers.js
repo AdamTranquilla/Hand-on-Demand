@@ -39,8 +39,9 @@ module.exports = (db) => {
       setTimeout(() => response.status(500).json({}), 1000);
       return;
     }
-    const offer_id = response.params.id;
-    const status = response.body.offer.offer_status;
+    console.log("response", request.params.id);
+    const offer_id = request.params.id;
+    const status = request.body.offer.offer_status;
 
     db.query(
       `
@@ -51,10 +52,10 @@ module.exports = (db) => {
       [status, offer_id]
     )
       .then(() => {
-        request.status(204).json({});
+        response.status(204).json({});
       })
       .catch((error) => {
-        request.status(500).json(error);
+        response.status(500).json(error);
       });
   });
 
