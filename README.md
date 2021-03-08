@@ -3,15 +3,15 @@
 Hand on Demand is a responsive google maps based web app where users can pin help requests to the map that other users can filter through, and apply to!
 
 - From the POST page users can list jobs with specified locations, categories, prices and payment types. After a location and category are selected a category-themed marker will pin the jobs to the map. Clicking on jobs pans to the jobs marker.
-!["posting job form"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post.png?raw=true)
+  !["posting job form"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post.png?raw=true)
 - When applying to jobs, helpers can filter based on location, distance, and job category. They can then send a counter offer based on price and payment type.
-!["filter and apply list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/apply.png?raw=true)
+  !["filter and apply list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/apply.png?raw=true)
 - From the JOBS sections users can see all of their postings, applications, and completed jobs. Posted jobs show all applications to them in a drop-down menu where applicants can be accepted or declined.
-!["users job list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/my-jobs.png?raw=true)
+  !["users job list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/my-jobs.png?raw=true)
 - Before accepting a job offer users can view the applicant's profile by selecting their avatar banner. Here you can see all of an applicant's past reviews as well as their average rating and completions per job category.
-!["user profile"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/profile.png?raw=true)
+  !["user profile"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/profile.png?raw=true)
 - After accepting an offer users can review the accepted applicant and either mark the job as completed or repost the job. Reposting a job brings back any pending applications.
-!["review helper"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/review.png?raw=true)
+  !["review helper"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/review.png?raw=true)
 
 ## Stack
 
@@ -25,7 +25,7 @@ Hand on Demand is a responsive google maps based web app where users can pin hel
 
 ## Setup
 
-Install dependencies withing the root, front-end and back-end folder with `npm install`.
+Install dependencies within both the front-end and back-end folder with `npm i`.
 
 ## Creating The DB
 
@@ -57,8 +57,9 @@ CHOKIDAR_USEPOLLING=false
 
 On back-end:
 
-1. Run a the development server with `npm start` in the Host environment.
+1. Run the development server with `npm start` in the Host environment.
 2. Then either Make a `GET` request to `/api/debug/reset` with `http://localhost:8001/api/debug/reset`, or seed directly in psql with
+
 ```psql
 \i src/db/schema/create.sql
 \i src/db/schema/development.sql
