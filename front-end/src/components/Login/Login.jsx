@@ -12,7 +12,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import AddIcon from "@material-ui/icons/Add";
 import { blue } from "@material-ui/core/colors";
 
-const users = ["user1@gmail.com", "user2@gmail.com"];
+const users = ["doubtfire@caretaking.net", "bob@building.com"];
 const useStyles = makeStyles({
   avatar: {
     backgroundColor: blue[100],
@@ -37,7 +37,7 @@ function Login({ onClose, selectedValue, open, setCurrentUser }) {
       aria-labelledby="simple-dialog-title"
       open={open}
     >
-      <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
+      <DialogTitle id="simple-dialog-title">Select preset user</DialogTitle>
       <List>
         {users.map((user) => (
           <ListItem
