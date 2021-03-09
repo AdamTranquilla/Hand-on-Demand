@@ -147,8 +147,8 @@ export default function Navbar(props) {
       <MenuItem onClick={() => handleProfileClick(cookies, state)}>
         My Profile
       </MenuItem>
-      <MenuItem onClick={() => handleLogin(1)}>Login: User 1</MenuItem>
-      <MenuItem onClick={() => handleLogin(2)}>Login: User 2</MenuItem>
+      {/*       <MenuItem onClick={() => handleLogin(1)}>Login: User 1</MenuItem>
+      <MenuItem onClick={() => handleLogin(2)}>Login: User 2</MenuItem> */}
       <MenuItem onClick={() => handleLogout()}>Logout</MenuItem>
     </Menu>
   );
