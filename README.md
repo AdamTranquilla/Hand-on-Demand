@@ -2,6 +2,9 @@
 
 Hand on Demand is a responsive google maps based web app where users can pin help requests to the map that other users can filter through, and apply to!
 
+[This app is Deployed on Netlify](https://hand-on-demand.netlify.app/). Feel free to play around but please do not post anything offensive.
+[Reset the Database](https://handondemand-api.herokuapp.com/api/debug/reset) for the best experience.
+
 - From the POST page users can list jobs with specified locations, categories, prices and payment types. After a location and category are selected a category-themed marker will pin the jobs to the map. Clicking on jobs pans to the jobs marker.
   !["posting job form"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post.png?raw=true)
 - When applying to jobs, helpers can filter based on location, distance, and job category. They can then send a counter offer based on price and payment type.
