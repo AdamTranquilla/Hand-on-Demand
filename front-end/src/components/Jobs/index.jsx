@@ -142,6 +142,8 @@ export default function Jobs({
             setMessages={setMessages}
             cookies={cookies}
             addMessage={addMessage}
+            setJobView={setJobView}
+            setProfile={setProfile}
           />
         </div>
       )}

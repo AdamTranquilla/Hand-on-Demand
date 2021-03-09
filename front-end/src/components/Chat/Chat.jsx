@@ -7,6 +7,8 @@ export default function Chat({
   message,
   setMessage,
   setCurrentChat,
+  setJobView,
+  setProfile,
   addMessage,
 }) {
   const onMessageSubmit = () => {
@@ -24,6 +26,13 @@ export default function Chat({
 
   // GET MESSAGES FROM STATE AND DISPLAY IN UI
   const messageList = getMessages(state.chatId);
+  const applicantId = state.userMessages[0].user_id;
+
+  const handleProfileClick = () => {
+    setJobView("PROFILE");
+    setProfile(state.users[applicantId].name);
+  };
+
   const messageListDisplay = messageList.map((message, index) => {
     const currentAuthor = +cookies.user;
     return (
@@ -44,8 +53,21 @@ export default function Chat({
   return (
     <div className="message-list">
       <h3>{state.userMessages[0].title}</h3>
-      <div className="chat-body">
-        {messageListDisplay}
+      <div className="chat-top">
+        <div className="offer-list-item">
+          <div className="item-row">
+            <div className="small-profile-offer" onClick={handleProfileClick}>
+              <div className="profile-container">
+                <img src={state.users[applicantId].avatar} alt="profile" />
+                <p className="username">{state.users[applicantId].name}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="chat-body">{messageListDisplay}</div>
+      <div className="chat-bottom">
         <div className="message-container">
           <input
             autoComplete="off"

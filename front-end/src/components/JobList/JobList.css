@@ -85,7 +85,7 @@
 
 .offer-list-item {
   color: #fff;
-  background: #093a79;
+  background: #9fc5e7;
   padding: 15px;
   border-radius: 10px;
   align-items: center;
@@ -111,7 +111,7 @@
 }
 
 .small-profile-offer .username {
-  color: #ace;
+  color: #093a79;
   margin-left: 5px;
 }
 
@@ -205,7 +205,7 @@
 }
 
 .counter-offer {
-  color: #f0f0f0;
+  color: #093a79;
   text-align: right;
   width: 100px;
 }

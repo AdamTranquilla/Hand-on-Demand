@@ -15,16 +15,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid orange;
 }
 
 .chat-body {
   position: relative;
-  border: 3px solid orange;
   background-color: #f0f0f0;
-  border-radius: 10px;
-  padding: 15px 25px 50px 15px;
-  background-color: #f0f0f0;
+  padding: 0px 20px 0px 20px;
   margin: 0 auto;
   height: 40vh;
   width: 80%;
@@ -34,33 +30,52 @@
   overflow: scroll;
 }
 
+.chat-top {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px 20px 0px 20px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.chat-bottom {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0px 20px 0px 20px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
 .message-input {
   height: 11px;
-  width: 55%;
+  width: 290px;
   padding: 15px;
   border-radius: 25px;
   background: f0f0f0;
   font-size: 16px;
   border: none;
-  margin-bottom: 10px;
-  padding-left: 20px;
   justify-content: center;
   align-items: center;
 }
 .message-container {
-  position: fixed;
-  border: 3px solid green;
-  /* top: 800px; */
-  bottom: 0;
-  padding: 0px 5vw 1vh 5vw;
-  z-index: 99;
+  width: 400px;
 }
 
 .message-btn {
   height: 40px;
   background: #093a79;
   color: #f0f0f0;
-  width: 85px;
+  width: 70px;
   height: 40px;
   border-radius: 30px;
   text-align: center;
