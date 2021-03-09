@@ -28,8 +28,8 @@ body {
   outline: none;
   margin: 5px;
   border: none;
-  background-color: #f0f0f0;
-  color: #093a79;
+  background: #093a79;
+  color: white;
 }
 
 .btns {
@@ -43,7 +43,6 @@ body {
   width: 100px;
   height: 40px;
   border-radius: 30px;
-  text-align: center;
   outline: none;
   margin: 5px;
   border: none;
@@ -57,18 +56,18 @@ body {
 }
 
 .btn-small:hover {
-  background: #9fc5e7;
-  color: white;
+  background-color: #f0f0f0;
+  color: #093a79;
   cursor: pointer;
 }
 
 .btn-status {
-  background-color: #9fc5e7;
-  color: rgba(255, 255, 255, 0.8);
-  width: 100px;
-  height: 40px;
-  border-radius: 30px;
-  text-align: center;
+  background-color: #093a79;
+  color: #f0f0f0;
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 1px;
   outline: none;
   margin: 5px;
   border: none;
