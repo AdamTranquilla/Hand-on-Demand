@@ -18,31 +18,23 @@ module.exports = (db, getSocket) => {
       return;
     }
 
-    const {
-      offer_id,
-      message,
-      user_id
-    } = request.body.message;
+    const { offer_id, message, user_id } = request.body.message;
 
     db.query(
       `
       INSERT INTO messages (user_id, offer_id, message)
       VALUES ($1, $2, $3) returning *;
     `,
-      [
-        +user_id,
-        offer_id,
-        message
-       ]
+      [+user_id, offer_id, message]
     )
       .then((dbRes) => {
-        const message = dbRes.rows[0]
-        const socket = getSocket()
-        socket.emit('chat', {...message, offer_id: offer_id} );
+        const message = dbRes.rows[0];
+        const socket = getSocket();
+        socket.emit("chat", { ...message, offer_id: offer_id });
         response.status(204).json({});
       })
       .catch((error) => {
-        console.log("Error adding message: ", error)
+        console.log("Error adding message: ", error);
       });
   });
 

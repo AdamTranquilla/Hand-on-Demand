@@ -1,6 +1,5 @@
 // HELPER FUNCTION TO FILTER JOBS STATE USED ON MAP, AND IN FIND VIEW
 export function getJobsFiltered(state, coord, categoryFilter, distanceFilter) {
-
   // JOBS IN PROGRESS AND COMPLETED ARE NOT SHOWN
   const pendingJobs = Object.values(state.jobs).filter(
     (job) => job.status === "POSTED"
@@ -13,7 +12,7 @@ export function getJobsFiltered(state, coord, categoryFilter, distanceFilter) {
         (job) =>
           distBtw2Ptss([job.lat, job.lng], [coord.lat, coord.lng]) <
           distanceFilter
-    ))
+      ))
     : (radiusJobs = pendingJobs);
 
   return categoryFilter.length === 0

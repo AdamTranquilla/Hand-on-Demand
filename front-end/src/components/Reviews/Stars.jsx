@@ -18,14 +18,14 @@ const StyledRating = withStyles({
     fontSize: "50px",
   },
   iconFilled: {
-    color: "#02539b",
+    color: "#093a79",
   },
   iconHover: {
-    color: "#02539b",
+    color: "#093a79",
   },
   heading: {
     textAlign: "center;",
-    color: "pink;",
+    color: "#093a79;",
   },
 })(Rating);
 

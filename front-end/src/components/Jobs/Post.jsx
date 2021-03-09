@@ -74,8 +74,8 @@ export default function Post({ state, coord, setCoord, onSave }) {
   };
 
   return (
-    <div>
-      <h3>Post a New Job</h3>
+    <>
+      <h3>Post A Help Request</h3>
       <div className="post-form">
         <div className="post-form-container">
           <TextField
@@ -180,7 +180,7 @@ export default function Post({ state, coord, setCoord, onSave }) {
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

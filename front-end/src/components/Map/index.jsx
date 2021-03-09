@@ -34,7 +34,6 @@ export default function Map({
   selected,
   jobMarkers,
 }) {
-
   const { isLoaded, loadError } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
     libraries,
@@ -49,7 +48,7 @@ export default function Map({
   const panTo = useCallback(({ lat, lng }) => {
     if (mapRef.current) {
       mapRef.current.panTo({ lat, lng });
-      mapRef.current.setZoom(15)
+      mapRef.current.setZoom(15);
     }
   }, []);
 
@@ -64,7 +63,7 @@ export default function Map({
 
   return (
     <div className="google-map">
-      <div className="map-title">Job Map</div>
+      {/* <div className="map-title">Job Map</div> */}
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={13}

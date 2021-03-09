@@ -1,12 +1,13 @@
 .profile-card {
-  background: #eeeeee;
-  /* margin-top: 200px; */
+  position: relative;
+
+  
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 0px 40px;
-  /* margin: 0px auto; */
   padding: 26px;
 }
 .card-name-container {
@@ -14,6 +15,10 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 95%;
+}
+
+.stars {
+  justify-content: right;
 }
 
 .stars-container {
@@ -36,7 +41,7 @@
 }
 
 .card-title {
-  color: #02539b;
+  color: #093a79;
   font-size: 20px;
   margin-top: 0px;
 }
@@ -49,11 +54,6 @@
   margin-bottom: 10px;
 }
 
-.stars {
-  font-size: 36px;
-  font-weight: bold;
-}
-
 .profile {
   width: 75px;
   height: 75px;
@@ -63,18 +63,17 @@
 
 .reviews {
   margin-top: 25px;
-  /* border: 3px solid darkgrey; */
   width: 95%;
 }
 
 .job-details {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid darkgrey;
+  border-top: 1px solid #9fc5e7;
 }
 
 .job-details p {
-  color: #02539b;
+  color: #093a79;
   font-weight: bold;
 }
 
@@ -88,7 +87,7 @@
 }
 
 .review-title {
-  color: #02539b;
+  color: #093a79;
   font-weight: bold;
   font-size: 16px;
   margin: 0;

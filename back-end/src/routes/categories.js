@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-module.exports = db => {
+module.exports = (db) => {
   router.get("/categories", (request, response) => {
     db.query(`SELECT * FROM categories`).then(({ rows: categories }) => {
       response.json(

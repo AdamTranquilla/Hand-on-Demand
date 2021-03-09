@@ -84,9 +84,8 @@ const Profile = ({ state }) => {
           </div>
 
           <div className="stars-container">
-            <p>Average Stars</p>
-            <div className="stars">
-              {starIcons(avgStars)}
+            <div>
+              <div className="stars">{starIcons(avgStars)}</div>
               <div className="stars-container">
                 {Object.keys(reviewCats).map((cat, i) => (
                   <span className="review-title">
