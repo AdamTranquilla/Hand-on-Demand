@@ -28,7 +28,9 @@ function Login({ onClose, selectedValue, open, setCurrentUser }) {
   };
 
   const handleListItemClick = (value) => {
-    value === "user1@gmail.com" ? setCurrentUser(1) : setCurrentUser(2);
+    value === "doubtfire@caretaking.net"
+      ? setCurrentUser(1)
+      : setCurrentUser(2);
   };
 
   return (
