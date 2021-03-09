@@ -190,7 +190,7 @@ export default function Navbar(props) {
     <div className={classes.grow} navbar>
       <AppBar
         position="static"
-        style={{ background: "#a0c5e7", color: "#02539b" }}
+        style={{ background: "#a0c5e7", color: "#093a79" }}
       >
         <Toolbar>
           <img
@@ -206,12 +206,6 @@ export default function Navbar(props) {
                 Welcome back, {getUserNameFromId(state.currentUser)}!
               </div>
             )}
-
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={5} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
             <IconButton
               edge="end"
               aria-label="account of current user"

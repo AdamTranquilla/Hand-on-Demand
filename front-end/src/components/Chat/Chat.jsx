@@ -7,17 +7,8 @@ export default function Chat({
   message,
   setMessage,
   setCurrentChat,
-  addMessage
+  addMessage,
 }) {
-
-  // LOOP THROUGH USER MESSAGES AND RETURN TITLE IF THE CHATID IN STATE IS EQUAL TO THE OFFERID FROM THE USER MESSAGE OBJECT
-  let jobTitle;
-  for (const message of state.userMessages) {
-    if (state.chatId === message.offer_id) {
-      jobTitle = message.title;
-    }
-  }
-
   const onMessageSubmit = () => {
     const user_id = cookies.user;
     const room = state.chatId;
@@ -51,23 +42,25 @@ export default function Chat({
   });
 
   return (
-    <div className="message-list scrollable content">
-      <h3>{jobTitle}</h3>
-      <div className="chat-body">{messageListDisplay}</div>
-      <div className="message-container">
-        <input
-          autoComplete="off"
-          className="message-input"
-          type="text"
-          name="message"
-          onChange={(e) => setMessage(e.target.value)}
-          value={message}
-          placeholder="Message"
-        />
+    <div className="message-list">
+      <h3>{state.userMessages[0].title}</h3>
+      <div className="chat-body">
+        {messageListDisplay}
+        <div className="message-container">
+          <input
+            autoComplete="off"
+            className="message-input"
+            type="text"
+            name="message"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
+            placeholder="Message"
+          />
 
-        <button className="message-btn" onClick={() => onMessageSubmit()}>
-          Send
-        </button>
+          <button className="message-btn" onClick={() => onMessageSubmit()}>
+            Send
+          </button>
+        </div>
       </div>
     </div>
   );

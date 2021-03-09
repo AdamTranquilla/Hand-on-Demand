@@ -1,8 +1,7 @@
 .conversation-list {
   display: flex;
   flex-direction: column;
-  /* border: 3px solid blue; */
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 

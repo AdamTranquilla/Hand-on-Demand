@@ -25,7 +25,7 @@ export default function JobToggle({ setJobView, jobView }) {
           setJobView("FIND");
         }}
       >
-        Find
+        Apply
       </button>
     </div>
   );

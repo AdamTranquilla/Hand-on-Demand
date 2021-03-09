@@ -58,18 +58,21 @@ module.exports = function application(ENV, actions = { updateJobs: () => {} }) {
   // GET COOKIES FOR CHAT ROOM AND CURRENT USER
   io.on("connection", (socket) => {
     const getCurrentCookies = () => {
-      const cookies = socket.handshake.headers.cookie.split(" ");
-      let currentUser;
-      let currentRoom;
-      for (const cookie of cookies) {
-        if (cookie.includes("user")) {
-          currentUser = cookie;
-        } else {
-          currentRoom = cookie;
-        }
-      }
+      // console.log("COOKIE ERROR EXISTS HERE", socket.handshake.headers);
 
-      return { currentUser, currentRoom };
+      if (socket.handshake.headers.cookie) {
+        const cookies = socket.handshake.headers.cookie.split(" ");
+        let currentUser;
+        let currentRoom;
+        for (const cookie of cookies) {
+          if (cookie.includes("user")) {
+            currentUser = cookie;
+          } else {
+            currentRoom = cookie;
+          }
+        }
+        return { currentUser, currentRoom };
+      }
     };
 
     const userCookies = getCurrentCookies();

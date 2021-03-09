@@ -1,8 +1,8 @@
 .map-container {
   box-sizing: border-box;
   display: flex;
-  width: 55vw;
-  height: 90vh;
+  width: 67vw;
+  /* height: 100vh; */
   /* border: 3px solid #ffb663; */
   /* border-right: 1px solid gray; */
   padding-right: 45px;
@@ -11,7 +11,7 @@
 
 .jobs-container {
   box-sizing: border-box;
-  width: 45vw;
+  width: 33vw;
   height: 85vh;
   /* padding-left: 20px; */
   overflow: scroll;

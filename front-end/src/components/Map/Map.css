@@ -13,7 +13,7 @@
 .find-me {
   position: relative;
   z-index: 2;
-  background-color: #9fc5e7;
+  background-color: #f0f0f0;
   margin: 5px;
   border-radius: 13px;
   border: 1px solid white;
@@ -99,15 +99,11 @@
   width: 250px;
   height: 35px;
   position: relative;
-  /* margin-top: 6px;
-  margin-left: 6px; */
   background-color: rgba(255, 255, 255, 0.9);
-  /* border: 1px solid rgb(175, 175, 175); */
   border-radius: 3px;
   border: none;
   outline: none;
   padding: 2px 6px;
-  /* text-align: center; */
 }
 
 .address-search:focus {
@@ -126,6 +122,6 @@
   font-size: 2em;
   text-align: center;
   margin-bottom: 8px;
-  color: #0a3a79;
+  color: #093a79;
   font-weight: bold;
 }

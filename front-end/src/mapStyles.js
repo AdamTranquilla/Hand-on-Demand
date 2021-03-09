@@ -4,7 +4,7 @@ export default [
     elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#02539b",
+        color: "#093a79",
       },
     ],
   },

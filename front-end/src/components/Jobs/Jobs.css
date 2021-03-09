@@ -3,7 +3,8 @@
 }
 
 h3 {
-  border-bottom: 1px solid darkgrey;
+  color: #093a79;
+  border-bottom: 1px solid #9fc5e7;
   width: 55%;
   text-align: center;
   margin: auto;
@@ -22,14 +23,17 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 0px;
   border-radius: 12px;
 }
 
 .post-form-container {
-  padding: 45px;
-  background: #eee;
-  border-radius: 12px;
+  position: relative;
+  background-color: #f0f0f0;
+  color: #093a79;
+  border-radius: 10px;
+  width: 80%;
+  margin: 12px 5px;
+  padding: 15px 55px;
 }
 
 .accordion-show {

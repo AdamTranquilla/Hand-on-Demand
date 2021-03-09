@@ -11,9 +11,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: 500,
     margin: "auto",
-    "& > * + *": {
-      marginTop: theme.spacing(3),
-    },
   },
 }));
 
@@ -63,47 +60,55 @@ export default function Find({
   const categories = Object.values(state.categories);
 
   return (
-    <div className="find-container">
-      <div className="category-box">
-        <div className={classes.root}>
-          <Places setCoord={setCoord} coord={coord} />
-          <Slider
-            defaultValue={5}
-            min={1}
-            max={25}
-            aria-labelledby="discrete-slider-custom"
-            step={1}
-            valueLabelDisplay="auto"
-            marks={marks}
-            style={{ color: "red;" }}
-            onChange={(event, value) => {
-              setDistanceFilter(value || null);
-            }}
-          />
-          <Autocomplete
-            onChange={(event, value) => {
-              setCategoryFilter(value || []);
-            }}
-            style={{
-              width: 450,
-              marginBottom: 8,
-              marginTop: 0,
-              marginLeft: 27,
-            }}
-            multiple
-            id="filter-categories"
-            options={categories}
-            getOptionLabel={(option) => option.name}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                variant="standard"
-                label="Category"
-                placeholder="Job Type"
-                setJobView={setJobView}
-              />
-            )}
-          />
+    <div className="jobs-container">
+      <h3>Apply To Help</h3>
+      <div className="apply-filters">
+        <div className="category-box">
+          <div className={classes.root}>
+            <Autocomplete
+              onChange={(event, value) => {
+                setCategoryFilter(value || []);
+              }}
+              style={{
+                width: 450,
+                marginTop: 0,
+                marginLeft: 10,
+              }}
+              multiple
+              id="filter-categories"
+              options={categories}
+              getOptionLabel={(option) => option.name}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  variant="standard"
+                  label="Category"
+                  placeholder="Job Type"
+                  setJobView={setJobView}
+                />
+              )}
+            />
+            <Places setCoord={setCoord} coord={coord} />
+            <Slider
+              defaultValue={5}
+              min={1}
+              max={25}
+              aria-labelledby="discrete-slider-custom"
+              step={1}
+              valueLabelDisplay="auto"
+              marks={marks}
+              style={{ color: "#9fc5e7;" }}
+              onChange={(event, value) => {
+                setDistanceFilter(value || null);
+              }}
+              style={{
+                width: 450,
+                marginBottom: 8,
+                marginTop: 15,
+                marginLeft: 10,
+              }}
+            />
+          </div>
         </div>
       </div>
       {jobsFiltered

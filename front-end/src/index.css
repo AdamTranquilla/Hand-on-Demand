@@ -6,10 +6,7 @@ html {
 }
 
 body {
-  /* font-family: "RocknRoll One", sans-serif !important; */
   font-family: "Merriweather", serif !important;
-  /* font-family: "Josefin Sans", sans-serif; */
-  /* overflow: scroll; */
   overflow: hidden;
   margin: 0;
   height: 100vh;
@@ -31,8 +28,8 @@ body {
   outline: none;
   margin: 5px;
   border: none;
-  background-color: #9fc5e7;
-  color: #135ea2;
+  background-color: #f0f0f0;
+  color: #093a79;
 }
 
 .btns {
@@ -50,23 +47,23 @@ body {
   outline: none;
   margin: 5px;
   border: none;
-  background-color: #135ea2;
+  background-color: #093a79;
   color: #fff;
 }
 
 .btn:hover {
-  background: darkgrey;
+  background: #9fc5e7;
   cursor: pointer;
 }
 
 .btn-small:hover {
-  background: darkgrey;
+  background: #9fc5e7;
   color: white;
   cursor: pointer;
 }
 
 .btn-status {
-  background-color: darkgrey;
+  background-color: #9fc5e7;
   color: rgba(255, 255, 255, 0.8);
   width: 100px;
   height: 40px;
@@ -88,13 +85,13 @@ body {
   outline: none;
   margin: 5px;
   border: none;
-  background-color: #135ea2;
+  background-color: #093a79;
   color: #fff;
   margin-left: 15px;
 }
 
 .profile-btn-small:hover {
-  background: darkgrey;
+  background: #9fc5e7;
   cursor: pointer;
 }
 
@@ -109,18 +106,18 @@ body {
   outline: none;
   margin: 5px;
   border: none;
-  background-color: #135ea2;
+  background-color: #093a79;
   color: #fff;
   margin-left: 15px;
 }
 
 .remove-btn:hover {
-  background: darkgrey;
+  background: #9fc5e7;
   color: white;
   cursor: pointer;
 }
 
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  background: transparent;
 }
