@@ -33,7 +33,7 @@ export default function All({
 
   return (
     <>
-      <h3>Your Requests</h3>
+      <h3>Posts</h3>
       {posted.length > 0 &&
         posted.map((myPosts) => (
           <PostedListItem
@@ -52,7 +52,7 @@ export default function All({
       {posted.length < 1 && (
         <p className="text-center">You have no posted jobs.</p>
       )}
-      <h3>Your Offers</h3>
+      <h3>Applications</h3>
       {applied.length > 0 &&
         applied.map((myApps) => (
           <AppliedListItem
@@ -67,7 +67,7 @@ export default function All({
       {applied.length < 1 && (
         <p className="text-center">You have no applied jobs.</p>
       )}
-      <h3>Completed Requests</h3>
+      <h3>Completed Jobs</h3>
       {completed.length > 0 &&
         completed.map((myPosts) => (
           <PostedListItem
