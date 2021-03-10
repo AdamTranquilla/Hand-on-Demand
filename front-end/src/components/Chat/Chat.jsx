@@ -11,12 +11,13 @@ export default function Chat({
   setProfile,
   addMessage,
 }) {
+  const offer_id = state.chatId;
+
   const onMessageSubmit = () => {
     const user_id = cookies.user;
-    const room = state.chatId;
 
     // MAKE POST REQUEST TO THE DATABASE
-    addMessage({ offer_id: room, user_id, message });
+    addMessage({ offer_id, user_id, message });
 
     // ADD MESSAGE TO STATE AND UPDATE THE CURRENT CHAT
     setCurrentChat((oldChats) => [message, ...oldChats]);
@@ -25,12 +26,16 @@ export default function Chat({
   };
 
   // GET MESSAGES FROM STATE AND DISPLAY IN UI
-  const messageList = getMessages(state.chatId);
-  const applicantId = state.userMessages[0].user_id;
+  const messageList = getMessages(offer_id);
+
+  const helper = state.offers[offer_id].helper_id;
+  const job_id = state.offers[offer_id].job_id;
+  const poster = state.jobs[job_id].client_id;
+  const contact = state.currentUser === helper ? poster : helper;
 
   const handleProfileClick = () => {
     setJobView("PROFILE");
-    setProfile(state.users[applicantId].name);
+    setProfile(state.users[contact].name);
   };
 
   const messageListDisplay = messageList.map((message, index) => {
@@ -52,14 +57,14 @@ export default function Chat({
 
   return (
     <div className="message-list">
-      <h3>{state.userMessages[0].title}</h3>
+      <h3>{state.jobs[job_id].name}</h3>
       <div className="chat-top">
         <div className="offer-list-item">
           <div className="item-row">
             <div className="small-profile-offer" onClick={handleProfileClick}>
               <div className="profile-container">
-                <img src={state.users[applicantId].avatar} alt="profile" />
-                <p className="username">{state.users[applicantId].name}</p>
+                <img src={state.users[contact].avatar} alt="profile" />
+                <p className="username">{state.users[contact].name}</p>
               </div>
             </div>
           </div>
