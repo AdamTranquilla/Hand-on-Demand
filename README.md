@@ -5,14 +5,15 @@ Hand on Demand is a responsive google maps based web app where users can pin hel
 [This app is Deployed on Netlify](https://hand-on-demand.netlify.app/). Feel free to play around but please do not post anything offensive.
 [Reset the Database](https://handondemand-api.herokuapp.com/api/debug/reset) for the best experience.
 
-- From the POST page users can list jobs with specified locations, categories, prices and payment types. After a location and category are selected a category-themed marker will pin the jobs to the map. Clicking on jobs pans to the jobs marker.
-  !["posting job"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post-new-job.gif?raw=true)
-- When applying to jobs, helpers can filter based on location, distance, and job category. They can then send a counter offer based on price and payment type.
-  !["filter and apply list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/apply.gif?raw=true)
-- From the JOBS sections users can see all of their postings, applications, and completed jobs. Posted jobs show all applications to them in a drop-down menu where applicants can be accepted or declined.
-- - Before accepting a job offer users can view the applicant's profile by selecting their avatar banner. Here you can see all of an applicant's past reviews as well as their average rating and completions per job category.
-- After accepting an offer users can review the accepted applicant and either mark the job as completed or repost the job. Reposting a job brings back any pending applications.
-  !["accepting applicants"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/offer.gif?raw=true)
+- From the POST page, users can list jobs with specified locations, categories, prices and payment types. After a location and category are selected, a category-themed marker will pin the jobs to the map.
+!["posting job"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post-new-job.gif?raw=true)
+- When applying to jobs, helpers can filter based on location, distance, and job category. They can then send a counter offer based on price and payment type. 
+- Clicking on jobs also pans to the jobs marker to show its general location, without revealing the address.
+!["filter and apply list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/apply.gif?raw=true)
+- From the JOBS sections, users can see all of their postings, applications, and completed jobs. Posted jobs show all applications to them in a drop-down menu where applicants can be accepted or declined.
+- Before accepting a job offer, users can view the applicant's profile by selecting their avatar banner. Here you can see an applicant's past reviews, average rating and completions per job category. Users can also message each other to discuss job details
+- After accepting an offer, users can review the accepted applicant and either mark the job as completed or repost the job. Reposting a job brings back any pending applications.
+!["accepting applicants"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/offer.gif?raw=true)
 
 ## Stack
 
