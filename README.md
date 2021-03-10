@@ -2,26 +2,10 @@
 
 Hand on Demand is a responsive google maps based web app where users can pin help requests to the map that other users can filter through, and apply to!
 
-## Project by
-- [Adam Tranquilla](https://github.com/AdamTranquilla)
-  - Database, Requests and Routing (Node.js, Express, Axios, pSQL)
-  - Job Posting, Job Applications (React/JSX)
-  - Job/Markers Filtering, Map Panning (Google Places API, React/JSX)
-  - Profile Ratings and Categories (CSS, React/JSX)
-  - Netlify/Heroku Deployment
-- [Natasha Colusso](https://github.com/NColusso)
-  - Implementing map component (Google Maps API, React/JSX)
-  - Helper functions for state (React/JSX)
-  - External component implementation (Material UI)
-- [Zach Harrison](https://github.com/zachharrison)
-  - Chat Feature  (Socket.io, cookies, React/JSX)
-  - Styling Lead (HTML5/CSS)
-  - Review Form (Material.UI, React/JSX)
-
-
+## Netlify/Heroku Deployment
 This app is deployed on Netlify with a Heroku Backend. The backend goes to sleep during inactivity and may need a few seconds to wake up. 
 
-This app relies on user interaction. To simulate this, there is preset data (job listings and offers) that may be mutated by other site visitor. Feel free to [RESET](https://handondemand-api.herokuapp.com/api/debug/reset) the preset development data for the full experience!
+This app relies on user interaction. To simulate this, there are preset data (job listings and offers) that other site visitors may have altered. Feel free to [RESET](https://handondemand-api.herokuapp.com/api/debug/reset) the preset development data for the full experience!
 
 #### [NETLIFY DEPLOYMENT](https://hand-on-demand.netlify.app/)
 
@@ -56,6 +40,22 @@ This app relies on user interaction. To simulate this, there is preset data (job
 - pSQL
 - socket.io
 - google maps API
+
+## Team
+- [Adam Tranquilla](https://github.com/AdamTranquilla)
+  - Database, Requests and Routing (Node.js, Express, Axios, pSQL)
+  - Job Posting, Job Applications (React/JSX)
+  - Job/Markers Filtering, Map Panning (Google Places API, React/JSX)
+  - Profile Ratings and Categories (CSS, React/JSX)
+  - Netlify/Heroku Deployment
+- [Natasha Colusso](https://github.com/NColusso)
+  - Implementing map component (Google Maps API, React/JSX)
+  - Helper functions for state (React/JSX)
+  - External component implementation (Material UI)
+- [Zach Harrison](https://github.com/zachharrison)
+  - Chat Feature  (Socket.io, cookies, React/JSX)
+  - Styling Lead (HTML5/CSS)
+  - Review Form (Material.UI, React/JSX)
 
 ## Setup
 
