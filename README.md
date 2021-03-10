@@ -8,6 +8,7 @@ Hand on Demand is a responsive google maps based web app where users can pin hel
   - Job Posting, Job Applications (React/JSX)
   - Job/Markers Filtering, Map Panning (Google Places API, React/JSX)
   - Profile Ratings and Categories (CSS, React/JSX)
+  - Netlify/Heroku Deployment
 - [Natasha Colusso](https://github.com/NColusso)
   - Implementing map component (Google Maps API, React/JSX)
   - Helper functions for state (React/JSX)
