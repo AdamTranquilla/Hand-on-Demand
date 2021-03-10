@@ -6,7 +6,7 @@ This app is deployed on Netlify with a Heroku Backend. The backend goes to sleep
 
 This app relies on user interaction. To simulate this, there is preset data (job listings and offers) that may be mutated by other site visitor. Feel free to [RESET](https://handondemand-api.herokuapp.com/api/debug/reset) the preset development data for the full experience!
 
-[Netlify Deployment](https://hand-on-demand.netlify.app/).
+###[NETLIFY DEPLOYMENT](https://hand-on-demand.netlify.app/)
 
 - From the POST page, users can list jobs with specified locations, categories, prices and payment types. After a location and category are selected, a category-themed marker will pin the jobs to the map.
 !["posting job"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post-new-job.gif?raw=true)
