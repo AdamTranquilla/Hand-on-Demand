@@ -6,19 +6,17 @@ Hand on Demand is a responsive google maps based web app where users can pin hel
 [Reset the Database](https://handondemand-api.herokuapp.com/api/debug/reset) for the best experience.
 
 - From the POST page users can list jobs with specified locations, categories, prices and payment types. After a location and category are selected a category-themed marker will pin the jobs to the map. Clicking on jobs pans to the jobs marker.
-  !["posting job form"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post.png?raw=true)
+  !["posting job"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post-new-job.gif?raw=true)
 - When applying to jobs, helpers can filter based on location, distance, and job category. They can then send a counter offer based on price and payment type.
-  !["filter and apply list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/apply.png?raw=true)
+  !["filter and apply list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/apply.gif?raw=true)
 - From the JOBS sections users can see all of their postings, applications, and completed jobs. Posted jobs show all applications to them in a drop-down menu where applicants can be accepted or declined.
-  !["users job list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/my-jobs.png?raw=true)
-- Before accepting a job offer users can view the applicant's profile by selecting their avatar banner. Here you can see all of an applicant's past reviews as well as their average rating and completions per job category.
-  !["user profile"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/profile.png?raw=true)
+- - Before accepting a job offer users can view the applicant's profile by selecting their avatar banner. Here you can see all of an applicant's past reviews as well as their average rating and completions per job category.
 - After accepting an offer users can review the accepted applicant and either mark the job as completed or repost the job. Reposting a job brings back any pending applications.
-  !["review helper"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/review.png?raw=true)
+  !["accepting applicants"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/offer.gif?raw=true)
 
 ## Stack
 
-### Frontend:
+### Frontend: I dont even own a snow shovel.. This is vancouver!
 
 - React, JS, CSS, material UI
 
