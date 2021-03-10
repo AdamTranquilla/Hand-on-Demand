@@ -368,7 +368,8 @@ VALUES (2, 1, 20, '/hr', 'REVIEWED'),
   (1, 7, 200, '/hr', 'REVIEWED'),
   (2, 7, 1212, ' total', 'PENDING'),
   (4, 8, 200, '/hr', 'PENDING'),
-  (2, 8, 1250, ' total', 'REVIEWED');
+  (2, 8, 1250, ' total', 'REVIEWED'),
+  (5, 21, 30, ' total', 'REVIEWED');
 INSERT INTO messages (user_id, offer_id, message, timestamp)
 VALUES (
     2,
@@ -390,27 +391,39 @@ VALUES (
   ),
   (
     1,
-    15,
-    'Mrs.Doubtfire sent an offer: $2000',
+    16,
+    'Tom Brady sent an offer: $40',
     '2021-02-20T09:15:39.223Z'
   ),
   (
     1,
-    15,
-    'Hey, I think I might be able to help you out, I know it''s a tough situation. Let''s chat and see if we might be a good fit',
-    '2021-02-21T09:15:39.223Z'
-  ),
-  (
-    3,
-    15,
-    'I''m willing to try anything at this point, I know we can get through this! If you''re okay with the price let''s find a time that works.',
-    '2021-02-22T09:15:39.223Z'
+    16,
+    'Have you tried deflating the ball a little bit?',
+    '2021-02-21T09:15:40.223Z'
   ),
   (
     2,
     7,
-    'BobTheBuilder sent an offer: $2000',
+    'BobTheBuilder sent an offer: $20',
     '2021-02-20T09:15:39.223Z'
+  ),
+  (
+    5,
+    22,
+    'CuriousGeorge sent an offer: $30',
+    '2021-02-20T09:15:39.223Z'
+  ),
+  (
+    1,
+    22,
+    'Please don''t eat the banana bread!',
+    '2021-02-20T09:16:39.223Z'
+  ),
+  (
+    5,
+    22,
+    'I''m sorry Mrs.Doubtfire! I couldn''t help it!',
+    '2021-02-20T09:16:39.223Z'
   );
 INSERT INTO reviews (helper_id, job_id, stars, details, timestamp)
 VALUES (

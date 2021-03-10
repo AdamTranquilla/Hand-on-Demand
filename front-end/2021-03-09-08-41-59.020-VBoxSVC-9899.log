@@ -1,0 +1,7 @@
+Log created: 2021-03-09T08:41:59.207597000Z
+Process ID:  9899 (0x26ab)
+Parent PID:  2727 (0xaa7)
+Executable:  /usr/lib/virtualbox/VBoxSVC
+Arg[0]: /usr/lib/virtualbox/VBoxSVC
+Arg[1]: --auto-shutdown
+AddRef: illegal refcnt=3221225469 state=2
