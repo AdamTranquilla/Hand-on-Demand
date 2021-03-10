@@ -6,13 +6,18 @@ This app is deployed on Netlify with a Heroku Backend. The backend goes to sleep
 
 This app relies on user interaction. To simulate this, there is preset data (job listings and offers) that may be mutated by other site visitor. Feel free to [RESET](https://handondemand-api.herokuapp.com/api/debug/reset) the preset development data for the full experience!
 
-### [NETLIFY DEPLOYMENT](https://hand-on-demand.netlify.app/)
+#### [NETLIFY DEPLOYMENT](https://hand-on-demand.netlify.app/)
 
+### Posting Jobs
 - From the POST page, users can list jobs with specified locations, categories, prices and payment types. After a location and category are selected, a category-themed marker will pin the jobs to the map.
 !["posting job"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/post-new-job.gif?raw=true)
+
+### Applying to Jobs
 - When applying to jobs, helpers can filter based on location, distance, and job category. They can then send a counter offer based on price and payment type. 
 - Clicking on jobs also pans to the jobs marker to show its general location, without revealing the address.
 !["filter and apply list"](https://github.com/AdamTranquilla/hand-on-demand/blob/master/front-end/public/apply.gif?raw=true)
+
+### Accepting and Reviewing Applicants 
 - From the JOBS sections, users can see all of their postings, applications, and completed jobs. Posted jobs show all applications to them in a drop-down menu where applicants can be accepted or declined.
 - Before accepting a job offer, users can view the applicant's profile by selecting their avatar banner. Here you can see an applicant's past reviews, average rating and completions per job category. Users can also message each other to discuss job details
 - After accepting an offer, users can review the accepted applicant and either mark the job as completed or repost the job. Reposting a job brings back any pending applications.
