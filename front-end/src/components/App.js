@@ -50,12 +50,6 @@ export default function App() {
     distanceFilter
   );
 
-    if REACT_APP_WEBSOCKET_URL
-
-    if (process.env.REACT_APP_WEBSOCKET_URL) {
-      axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
-    }
-
   let wsServer = process.env.REACT_APP_WEBSOCKET_URL
     ? process.env.REACT_APP_WEBSOCKET_URL
     : "http://localhost:8001";
