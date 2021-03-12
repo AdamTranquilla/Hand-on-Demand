@@ -50,8 +50,18 @@ export default function App() {
     distanceFilter
   );
 
+    if REACT_APP_WEBSOCKET_URL
+
+    if (process.env.REACT_APP_WEBSOCKET_URL) {
+      axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
+    }
+
+  let wsServer = process.env.REACT_APP_WEBSOCKET_URL
+    ? process.env.REACT_APP_WEBSOCKET_URL
+    : "http://localhost:8001";
+
   const initiateSocket = (room) => {
-    const socket = io("http://localhost:8001", { transports: ["websocket"] });
+    const socket = io(wsServer, { transports: ["websocket"] });
     // SET SOCKET CONNECTION IN STATE
     setSocket(socket);
     if (socket && room) socket.emit("join", room);
